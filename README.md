@@ -1,1 +1,1 @@
-# Gamehub-repo
+# Gamehub-repo by Eivind Simonsen
