@@ -7,7 +7,7 @@
 
 h1 {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 4em;
+  font-size: 3em;
   text-transform: uppercase;
 }
 
@@ -18,9 +18,10 @@ h2 {
 header,
 footer {
   background-color: #1d2540;
+  width: cover;
 }
 
-header a {
+a {
   color: #f2f2f2;
 }
 
@@ -29,15 +30,25 @@ body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
-nav li {
+header li {
   display: inline-block;
   font-size: 25px;
-  padding: 20px;
+  padding: 15px;
 }
 
-header {
+footer li {
+  display: inline-block;
+  font-size: 25px;
+  padding: 15px;
+}
+
+header,
+footer {
   display: flex;
   align-items: center;
 }
@@ -47,6 +58,8 @@ header {
 .add-to-cart {
   background-color: #1d2540;
   color: #f2f2f2;
+  border-radius: 30px;
+  padding: 10px 30px;
 }
 
 a {
@@ -71,6 +84,7 @@ a {
   position: absolute;
   text-align: center;
   color: #1d2540;
+  top: 150px;
 }
 
 .Popular,
@@ -92,4 +106,12 @@ a {
 .Deals img {
   width: 100%;
   min-width: auto;
+}
+
+.Popular p,
+.Deals p {
+  background-color: #1d2540;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 10px;
 }
