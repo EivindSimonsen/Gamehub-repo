@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../Fonts/Montserrat-Regular.ttf) format("truetype");
+}
+
+/*Global-styles*/
+
+h1 {
+  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+header,
+footer {
+  background-color: #1d2540;
+}
+
+header a {
+  color: #f2f2f2;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 25px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+/*Links*/
+
+.add-to-cart {
+  background-color: #1d2540;
+  color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  padding: 20px;
+}
+
+/*Home-page*/
+
+.welcome {
+  background-image: url(../images/Fifa.jpg);
+  min-height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome__content {
+  position: absolute;
+  text-align: center;
+  color: #1d2540;
+}
+
+.Popular,
+.Deals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: auto;
+  grid-gap: 0px 80px;
+  margin: 50px auto;
+}
+
+.Popular h2,
+.Deals h2 {
+  grid-column: -1/1;
+}
+
+.Popular img,
+.Deals img {
+  width: 100%;
+  min-width: auto;
+}
