@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -16,10 +17,23 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="Games.html" class="games">Games</a></li>
+                    <li><a href="games/Games.html" class="games">Games</a></li>
                     <li><a href="Sell-game.html" class="sell-game">Sell game</a></li>
                 </ul>
             </nav>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <a href="Contact/Contact.html">Search</a>
+                <input type="text">
+            </div>
+            <div>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div>
+                <i class="fas fa-user-alt"></i>
+                <a href="#" class="log-in">Log in</a>
+                <p class="CAA">Create an account</p>
+            </div>
         </header>
         <main>
             <section class="welcome">
@@ -28,47 +42,74 @@
                     <h2>Discover your greatest deals</h2>
                 </div>
             </section>
-            <section class="Popular">
+            <section class="Popular__h2">
                 <h2>Popular</h2>
-                    <div class="Popular__Products">    
+                <hr>
+                <section class="icons">
+                    <label for="console"><i class="fas fa-gamepad"> - Console supported</i></label>
+                    <label for="pc"><i class="fas fa-desktop"> - PC supported</i></label>
+                </section>
+            </section>
+            <section class="Popular">
+                    <div class="Popular__Products">
+                        <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
+                        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
                         <img src="images/call_of_duty_modern_warfare_3_cover-900x900.jpg" alt="Call of duty: Modern warfare">
                         <p>$ 29.99</p>
                         <a href="Add to cart" class="add-to-cart">Add to cart</a>
                     </div>
-                    <div class="Popular__Products">    
+                    <div class="Popular__Products">
+                        <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
+                        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>    
                         <img src="images/call_of_duty_modern_warfare_3_cover-900x900.jpg" alt="Call of duty: Modern warfare">
                         <p>$ 49.99</p>
                         <a href="Add to cart" class="add-to-cart">Add to cart</a>
                     </div>
-                    <div class="Popular__Products">    
+                    <div class="Popular__Products">
+                        <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
+                        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>    
                         <img src="images/call_of_duty_modern_warfare_3_cover-900x900.jpg" alt="Call of duty: Modern warfare">
                         <p>$ 29.99</p>
                         <a href="Add to cart" class="add-to-cart">Add to cart</a>
                     </div>
-                    <div class="Popular__Products">    
+                    <div class="Popular__Products">
+                        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>    
                         <img src="images/call_of_duty_modern_warfare_3_cover-900x900.jpg" alt="Call of duty: Modern warfare">
                         <p>$ 6.66 </p>
                         <a href="Add to cart" class="add-to-cart">Add to cart</a>
                     </div>
             </section>
-            <section class="Deals">
+            <section class="Deals__h2">
                 <h2>Deals</h2>
+                <hr>
+                <section class="icons">
+                    <label for="console"><i class="fas fa-gamepad"> - Console supported</i></label>
+                    <label for="pc"><i class="fas fa-desktop"> - PC supported</i></label>
+                </section>
+            </section>
+            <section class="Deals">
                     <div class="Deals__Products">
+                        <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
+                        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
                         <img src="images/call_of_duty_modern_warfare_3_cover-900x900.jpg" alt="Call of duty: Modern warfare">
                         <p>$ 59.99 $ 35.99</p>
                         <a href="Add to cart" class="add-to-cart">Add to cart</a>
                     </div>
                     <div class="Deals__Products">
+                        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
                         <img src="images/call_of_duty_modern_warfare_3_cover-900x900.jpg" alt="Call of duty: Modern warfare">
                         <p>$ 39.99 $ 20.00</p>
                         <a href="Add to cart" class="add-to-cart">Add to cart</a>
                     </div>
                     <div class="Deals__Products">
+                        <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
+                        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
                         <img src="images/call_of_duty_modern_warfare_3_cover-900x900.jpg" alt="Call of duty: Modern warfare">
                         <p>$ 29.99 $ 9.00</p>
                         <a href="Add to cart" class="add-to-cart">Add to cart</a>
                     </div>
                     <div class="Deals__Products">
+                        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
                         <img src="images/call_of_duty_modern_warfare_3_cover-900x900.jpg" alt="Call of duty: Modern warfare">
                         <p>$ 59.99 $ 41.99</p>
                         <a href="Add to cart" class="add-to-cart">Add to cart</a>
@@ -82,6 +123,11 @@
                     <li><a href="Contact.html" class="footer">Contact</a></li>
                 </ul>
             </nav>
+            <section class="social">
+                <label for="instagram"><i class="fab fa-instagram"></i></label>
+                <label for="twitter"><i class="fab fa-twitter"></i></label>
+                <label for="facebook"><i class="fab fa-facebook-f"></i></label>
+            </section>
         </footer>
     </body>
 </html>
