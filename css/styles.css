@@ -97,6 +97,11 @@ a {
   margin: 50px auto;
 }
 
+.Popular__Products,
+.Deals__Products {
+  text-align: center;
+}
+
 .Popular h2,
 .Deals h2 {
   grid-column: -1/1;
@@ -114,4 +119,5 @@ a {
   text-align: center;
   color: #f2f2f2;
   padding: 10px;
+  margin-top: 5px;
 }
