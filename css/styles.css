@@ -36,9 +36,36 @@ body {
 
 header li,
 footer li {
-  display: inline-block;
+  display: block;
   font-size: 25px;
   padding: 15px;
+}
+
+footer li {
+  display: inline-block;
+}
+
+header nav {
+  display: none;
+  position: fixed;
+  top: 95px;
+  background: #1d2540;
+  z-index: 1000;
+  left: 0px;
+}
+
+#Hamburger:checked ~ nav {
+  display: block;
+}
+
+#Hamburger {
+  display: none;
+}
+
+.fa-bars {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding-right: 30px;
 }
 
 .social {
@@ -50,18 +77,7 @@ footer li {
 
 .fa-twitter {
   padding: 20px;
-}
-
-.search-box {
-  position: relative;
-  width: 600px;
-  height: 30px;
-  background-color: #f2f2f2;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  padding: 5px 15px;
-  margin: 0px auto;
+  font-size: 25px;
 }
 
 .search-box > a {
@@ -71,6 +87,7 @@ footer li {
 .search-box > input {
   flex: 1;
   height: 30px;
+  width: 20px;
   border: none;
   outline: none;
   background-color: #f2f2f2;
@@ -80,7 +97,7 @@ footer li {
 .fa-shopping-cart {
   color: #f2f2f2;
   font-size: 25px;
-  padding: 0px 30px;
+  padding: 0px 15px;
 }
 
 .fa-user-alt {
@@ -93,9 +110,15 @@ footer li {
   margin-left: 30px;
 }
 
+.login > .fa-user-alt {
+  display: none;
+}
+
 .log-in {
   padding-right: 40px;
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .Create-an-account {
@@ -103,6 +126,20 @@ footer li {
   color: #1c8adb;
   font-size: 13px;
   top: 60px;
+  right: 75px;
+  display: none;
+}
+
+.search-box {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 0px auto;
 }
 
 /*Links*/
@@ -137,7 +174,6 @@ li a:hover {
   background-color: #f2f2f2;
   color: #1d2540;
   border-radius: 30px;
-  padding: 10px 20px;
 }
 
 /*Home-page*/
@@ -157,13 +193,14 @@ li a:hover {
   position: absolute;
   text-align: center;
   color: #1d2540;
-  top: 150px;
+  top: 20px;
+  font-size: 12px;
 }
 
 .Popular__h2,
 .Deals__h2 {
   margin: 50px auto;
-  max-width: 1100px;
+  max-width: 500px;
   color: #1d2540;
   position: relative;
 }
@@ -174,6 +211,7 @@ li a:hover {
   position: absolute;
   top: 10px;
   left: 769px;
+  display: none;
 }
 
 .fa-gamepad {
@@ -200,10 +238,10 @@ li a:hover {
 .Popular,
 .Deals {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 1100px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 500px;
   margin: auto;
-  grid-gap: 0px 80px;
+  grid-gap: 80px 80px;
   margin: 50px auto 100px auto;
 }
 
@@ -230,4 +268,68 @@ li a:hover {
   bottom: 7px;
   right: 0px;
   left: 0px;
+}
+
+/*Media Queries*/
+
+@media (min-width: 935px) {
+  .Popular,
+  .Deals {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    gap: 80px 80px;
+    margin: 50px auto 100px auto;
+  }
+  .Popular__h2,
+  .Deals__h2 {
+    max-width: 800px;
+  }
+
+  .search-box {
+    width: 350px;
+  }
+  .welcome__content {
+    top: 100px;
+  }
+}
+
+@media (min-width: 1224px) {
+  .Popular,
+  .Deals {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+    gap: 0px 80px;
+    margin: 50px auto 100px auto;
+  }
+  .Popular__h2,
+  .Deals__h2 {
+    max-width: 1100px;
+  }
+
+  .icons {
+    display: inline;
+  }
+
+  header nav,
+  nav li {
+    display: inline-block;
+    position: static;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .login > .fa-user-alt,
+  .Create-an-account {
+    display: inline;
+  }
+
+  .search-box {
+    width: 350px;
+  }
+
+  .welcome__content {
+    top: 150px;
+  }
 }
