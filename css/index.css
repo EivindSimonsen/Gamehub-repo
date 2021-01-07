@@ -1,0 +1,91 @@
+.welcome {
+  background-image: url(../images/Fifa.jpg);
+  min-height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome__content {
+  position: absolute;
+  text-align: center;
+  color: var(--header-footer-color);
+  top: 20px;
+  font-size: 12px;
+}
+
+.Popular__h2,
+.Deals__h2 {
+  margin: 50px auto;
+  max-width: 500px;
+  color: var(--header-footer-color);
+  position: relative;
+}
+
+.icons {
+  font-family: roboto;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 769px;
+  display: none;
+}
+
+.fa-gamepad {
+  padding: 0px 20px;
+}
+
+.pc-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.console-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.Popular__h2 hr,
+.Deals__h2 hr {
+  border: 1px solid;
+}
+
+.Popular,
+.Deals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 500px;
+  margin: auto;
+  gap: 80px 80px;
+  margin: 50px auto 100px auto;
+}
+
+.Popular__Products,
+.Deals__Products {
+  text-align: center;
+  position: relative;
+}
+
+.Popular img,
+.Deals img {
+  width: 100%;
+  min-width: auto;
+}
+
+.Popular p,
+.Deals p {
+  background-color: var(--header-footer-color);
+  text-align: center;
+  color: var(--nav-elements);
+  padding: 11px;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 7px;
+  right: 0px;
+  left: 0px;
+}

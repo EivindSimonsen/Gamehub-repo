@@ -1,0 +1,61 @@
+@media (min-width: 935px) {
+  .Popular,
+  .Deals {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    gap: 80px 80px;
+    margin: 50px auto 100px auto;
+  }
+  .Popular__h2,
+  .Deals__h2 {
+    max-width: 800px;
+  }
+
+  .search-box {
+    width: 350px;
+  }
+  .welcome__content {
+    top: 100px;
+  }
+}
+
+@media (min-width: 1345px) {
+  .Popular,
+  .Deals {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+    gap: 0px 80px;
+    margin: 50px auto 100px auto;
+  }
+  .Popular__h2,
+  .Deals__h2 {
+    max-width: 1100px;
+  }
+
+  .icons {
+    display: inline;
+  }
+
+  header nav,
+  nav li {
+    display: inline-block;
+    position: static;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .login > .fa-user-alt,
+  .Create-an-account {
+    display: inline;
+  }
+
+  .search-box {
+    width: 500px;
+  }
+
+  .welcome__content {
+    top: 150px;
+  }
+}

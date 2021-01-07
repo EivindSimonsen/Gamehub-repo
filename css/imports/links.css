@@ -1,0 +1,31 @@
+.add-to-cart {
+  background-color: var(--header-footer-color);
+  color: var(--nav-elements);
+  border-radius: 30px;
+  padding: 10px 30px;
+  position: relative;
+  top: 20px;
+}
+
+.add-to-cart:hover {
+  background-color: var(--nav-elements);
+  color: var(--header-footer-color);
+  border-radius: 30px;
+  padding: 10px 30px;
+  position: relative;
+  top: 20px;
+  border: solid var(--header-footer-color);
+  border-width: 1px;
+}
+
+a {
+  color: var(--nav-elements);
+  text-decoration: none;
+  padding: 20px;
+}
+
+li a:hover {
+  background-color: var(--nav-elements);
+  color: var(--header-footer-color);
+  border-radius: 30px;
+}
