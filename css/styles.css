@@ -39,7 +39,6 @@ body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px;
   padding: 0px;
-  min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
