@@ -1,9 +1,3 @@
-.current {
-  background-color: var(--nav-elements);
-  color: var(--header-footer-color);
-  border-radius: 30px;
-}
-
 .categories > a {
   color: var(--header-footer-color);
 }
