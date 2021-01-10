@@ -35,6 +35,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .grid-order {
+    grid-template-columns: repeat(2, 13fr);
+  }
+}
+
 @media (min-width: 1436px) {
   .Popular,
   .Deals {
@@ -81,5 +87,11 @@
 
   .search-box-sell {
     width: 1100px;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: row;
+    gap: 140px;
   }
 }

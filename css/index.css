@@ -1,6 +1,6 @@
 .welcome {
   background-image: url(../images/Fifa.jpg);
-  min-height: 70vh;
+  min-height: 48vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -13,7 +13,7 @@
   position: absolute;
   text-align: center;
   color: var(--header-footer-color);
-  top: 20px;
+  top: -22px;
   font-size: 12px;
 }
 
