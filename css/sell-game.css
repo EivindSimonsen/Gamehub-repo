@@ -2,3 +2,30 @@ h2 {
   text-align: center;
   margin-top: 25px;
 }
+
+.search-box-sell {
+  position: relative;
+  width: 500px;
+  height: 50px;
+  background-color: var(--nav-elements);
+  border-radius: 10px;
+  border: solid 1px var(--header-footer-color);
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+  margin: 20px auto;
+}
+
+.search-box-sell > a {
+  color: var(--header-footer-color);
+}
+
+.search-box-sell > input {
+  flex: 1;
+  height: 30px;
+  width: 700px;
+  border: none;
+  outline: none;
+  background-color: var(--nav-elements);
+  padding-left: 10px;
+}

@@ -21,11 +21,11 @@
 a {
   color: var(--nav-elements);
   text-decoration: none;
-  padding: 20px;
+  padding: 15px;
 }
 
 li a:hover {
   background-color: var(--nav-elements);
   color: var(--header-footer-color);
-  border-radius: 30px;
+  border-radius: 50px;
 }

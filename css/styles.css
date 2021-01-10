@@ -34,10 +34,10 @@ footer {
 }
 
 body {
-  height: 120vh;
+  height: 100vh;
   background-color: var(--nav-elements);
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -47,7 +47,7 @@ header li,
 footer li {
   display: block;
   font-size: 25px;
-  padding: 15px;
+  padding: 20px 40px;
 }
 
 footer li {
@@ -78,10 +78,7 @@ header nav {
 }
 
 .social {
-  color: var(--nav-elements);
-  position: absolute;
-  right: 40px;
-  font-size: 25px;
+  display: none;
 }
 
 .fa-twitter {
@@ -91,6 +88,7 @@ header nav {
 
 .search-box > a {
   color: var(--header-footer-color);
+  padding-left: 5px;
 }
 
 .search-box > input {
@@ -100,7 +98,6 @@ header nav {
   border: none;
   outline: none;
   background-color: var(--nav-elements);
-  padding-left: 10px;
 }
 
 .fa-shopping-cart {
@@ -134,7 +131,7 @@ header nav {
   position: absolute;
   color: #1c8adb;
   font-size: 13px;
-  top: 60px;
+  top: 65px;
   right: 75px;
   display: none;
 }
@@ -147,11 +144,11 @@ header nav {
   border-radius: 30px;
   display: flex;
   align-items: center;
-  padding: 5px 15px;
+  padding: 5px 10px;
   margin: 0px auto;
 }
 
 hr {
   border: 1px solid;
-  max-width: 1100px;
+  max-width: 500px;
 }
