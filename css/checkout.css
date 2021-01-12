@@ -1,0 +1,46 @@
+h2 {
+  text-align: center;
+}
+
+.add-to-cart,
+.add-to-cart:hover {
+  padding: 10px 60px;
+}
+
+.payment {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.payment-image {
+  padding: 0px 20px 0px 0px;
+}
+
+.payment-image > img {
+  width: 300px;
+}
+
+.payment-cta,
+.payment-cta:hover {
+  position: absolute;
+  right: 0px;
+  top: 400px;
+  margin-top: 20px;
+}
+
+.payment-cta > p {
+  font-size: 1.5em;
+  border-bottom: 2px solid var(--header-footer-color);
+}
+
+span {
+  color: #1c8adb;
+  font-size: 40px;
+}
+
+.larger {
+  font-size: 30px;
+}

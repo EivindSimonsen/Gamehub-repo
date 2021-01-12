@@ -1,0 +1,32 @@
+@import "games.css";
+
+h2 {
+  text-align: center;
+}
+
+.product {
+  max-width: 1100px;
+}
+
+.product-image > img {
+  width: 400px;
+}
+
+.wrap {
+  padding-top: 40px;
+  white-space: normal;
+}
+
+.product-info > a,
+.product-info > a:hover {
+  top: 460px;
+}
+
+p {
+  color: var(--header-footer-color);
+}
+
+span {
+  font-size: 40px;
+  color: #1c8adb;
+}

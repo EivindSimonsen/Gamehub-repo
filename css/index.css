@@ -25,6 +25,10 @@
   position: relative;
 }
 
+.Popular__Products > label {
+  color: var(--nav-elements);
+}
+
 .icons {
   font-family: roboto;
   text-align: center;

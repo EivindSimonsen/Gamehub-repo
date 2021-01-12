@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <title>Gamehub.Inc</title>
-        <meta name="Contact us!" content="Have questions? Feel free to send us a mail">
+        <meta name="Search for many different games!" content="Find the game you want!">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="stylesheet" href="../css/checkout.css">
         <link rel="stylesheet" href="../css/media.css">
         <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
     </head>
@@ -30,7 +30,7 @@
                 <input type="text" placeholder="Search">
             </div>
             <div>
-                <a href="../Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
             <div class="login">
                 <i class="fas fa-user-alt"></i>
@@ -41,29 +41,32 @@
         <main>
             <section>
                 <div>
-                    <h2>Contact</h2>
+                    <h2>Shopping-cart</h2>
                 </div>
                 <hr>
             </section>
-            <form method="POST" class="form">
-                <div class="form-wrapper">
-                    <label for="Your-name">Full name</label>
-                    <input type="text" name="Your-name">
-                    <label for="E-mail">E-mail</label>
-                    <input type="text" name="E-mail">
-                    <label for="Message">Message</label>
-                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
-                    <div class="submit">
-                        <input type="submit" value="Send now" class="add-to-cart">
-                    </div>
+            <section class="payment">
+                <div class="payment-image">
+                    <img src="../images/GameHub_covers.jpg" alt="Ping Pong Championship, a ping pong simulator.">
                 </div>
-            </form>
+                <div class="payment-info">
+                    <p class="larger">Ping Pong Championship</p>
+                    <p class="larger">Physical edition</p>
+                    <p>The fan favourite Ping Pong series is back with new challenges and bigger tournaments!</p>
+                    <p class="larger"><span>$ 29.99</span></p>
+                </div>
+                <section class="payment-cta">
+                    <p>Total: <span>$29.99</span></p>
+                    <a href="Payment.html" class="add-to-cart">Checkout</a>
+                </section>
+            </section>
+            <hr>
         </main>
         <footer>
             <nav>
                 <ul>
                     <li><a href="../index.html" class="footer">GAMEHUB.INC</a></li>
-                    <li><a href="../Contact/Contact.html" class="footer current">Contact</a></li>
+                    <li><a href="../Contact/Contact.html" class="footer">Contact</a></li>
                 </ul>
             </nav>
             <section class="social">

@@ -34,6 +34,8 @@
   position: relative;
   gap: 5px;
   padding: 20px;
+  min-width: 523.328px;
+  min-height: 207.406px;
 }
 
 .product-info > label {
@@ -51,6 +53,7 @@
   border: solid 1px var(--header-footer-color);
   padding: 10px;
   position: relative;
+  flex: 1;
 }
 
 .product-info > a {
@@ -68,6 +71,9 @@
 p {
   font-size: 25px;
   color: #1c8adb;
+  padding-right: 0px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .product-info--sale {
