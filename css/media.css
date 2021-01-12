@@ -33,11 +33,23 @@
   .search-box-sell {
     width: 800px;
   }
+
+  .receipt {
+    max-width: 800px;
+  }
 }
 
 @media (min-width: 1200px) {
   .grid-order {
     grid-template-columns: repeat(2, 13fr);
+  }
+
+  .Sell-game-info {
+    display: flex;
+  }
+
+  .price {
+    top: 412px;
   }
 }
 
@@ -93,5 +105,9 @@
     display: flex;
     flex-direction: row;
     gap: 140px;
+  }
+
+  .receipt {
+    max-width: 1100px;
   }
 }

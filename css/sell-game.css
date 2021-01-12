@@ -1,7 +1,11 @@
+/*Global*/
+
 h2 {
   text-align: center;
   margin-top: 25px;
 }
+
+/*Sell game page*/
 
 .search-box-sell {
   position: relative;
@@ -28,4 +32,115 @@ h2 {
   outline: none;
   background-color: var(--nav-elements);
   padding-left: 10px;
+}
+
+/*Sell game info page*/
+
+.Sell-game-info {
+  position: relative;
+  display: grid;
+  margin: 0px auto;
+  padding-top: 20px;
+  max-width: 1100px;
+  justify-content: center;
+}
+
+#bottom {
+  padding-bottom: 200px;
+}
+
+.input > input[type="text"] {
+  display: inline;
+  padding: 30px;
+}
+
+.price {
+  font-size: 20px;
+  position: absolute;
+  top: 1250px;
+  border-bottom: 2px solid var(--header-footer-color);
+}
+
+span {
+  font-size: 28px;
+  color: #1c8adb;
+}
+
+.add-to-cart,
+.add-to-cart:hover {
+  padding: 10px 60px;
+}
+
+.Sell-game-info > * {
+  flex: 1;
+}
+
+.video-game {
+  width: 220px;
+}
+
+.Sell-game-info > div {
+  padding: 20px;
+}
+
+div > input {
+  background-color: var(--nav-elements);
+  border: none;
+  border-bottom: 2px solid var(--header-footer-color);
+}
+
+.larger {
+  font-size: 1.5em;
+}
+
+/*Receipt page*/
+
+.receipt {
+  border: 2px solid var(--header-footer-color);
+  background-color: lightgray;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px 10px 200px 10px;
+  position: relative;
+}
+
+.video-game-receipt {
+  width: 200px;
+  padding: 20px;
+}
+
+.receipt-info {
+  position: relative;
+}
+
+.receipt-info-extended {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+
+.receipt-info-main {
+  display: flex;
+  background-color: var(--nav-elements);
+  justify-content: space-evenly;
+}
+
+.receipt-info-main > * {
+  font-size: 25px;
+}
+
+.receipt-info-main > div {
+  margin: auto 0px;
+}
+
+.price__receipt {
+  border-bottom: 2px solid var(--header-footer-color);
+}
+
+.print {
+  font-size: 1, 5em;
+  color: #1c8adb;
+  right: 20px;
+  position: absolute;
+  bottom: 20px;
 }
