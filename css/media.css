@@ -79,7 +79,7 @@
   }
 }
 
-@media (min-width: 1436px) {
+@media (min-width: 1444px) {
   .Popular,
   .Deals {
     grid-template-columns: repeat(4, 1fr);
