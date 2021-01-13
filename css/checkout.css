@@ -1,3 +1,7 @@
+@import "sell-game.css";
+
+/*Global*/
+
 h2 {
   text-align: center;
 }
@@ -7,12 +11,14 @@ h2 {
   padding: 10px 60px;
 }
 
+/*Checkout page*/
+
 .payment {
   position: relative;
   display: flex;
   flex-direction: row;
-  max-width: 1100px;
-  margin: 40px auto;
+  max-width: 500px;
+  margin: 40px auto 5px auto;
 }
 
 .payment-image {
@@ -43,4 +49,19 @@ span {
 
 .larger {
   font-size: 30px;
+}
+
+/*Payment page*/
+
+.payment-form {
+  max-width: 500px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.payment-cta-form {
+  max-width: 1100px;
+  position: absolute;
+  left: 400px;
+  bottom: 30px;
 }
