@@ -79,7 +79,7 @@
   }
 }
 
-@media (min-width: 1444px) {
+@media (min-width: 1470px) {
   .Popular,
   .Deals {
     grid-template-columns: repeat(4, 1fr);
@@ -106,8 +106,7 @@
     display: none;
   }
 
-  .login > .fa-user-alt,
-  .Create-an-account {
+  .login > .fa-user-alt {
     display: inline;
   }
 

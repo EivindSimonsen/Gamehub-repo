@@ -70,7 +70,7 @@
 
 p {
   font-size: 25px;
-  color: #1c8adb;
+  color: var(--p-color);
   padding-right: 0px;
   overflow: hidden;
   white-space: nowrap;
@@ -87,7 +87,7 @@ p {
 }
 
 .discount {
-  color: #1c8adb;
+  color: var(--p-color);
   position: absolute;
   background-color: var(--header-footer-color);
   border-radius: 50%;

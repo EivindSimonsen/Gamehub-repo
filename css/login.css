@@ -1,3 +1,62 @@
+@import "sell-game.css";
+
 h2 {
   text-align: center;
+}
+
+/*Login*/
+
+.login-form {
+  text-align: center;
+  padding: 20px;
+}
+
+.login-cta {
+  padding: 20px;
+}
+
+/*Create account*/
+
+.Create-an-account {
+  padding: 20px;
+}
+
+.Create-an-account > a {
+  color: var(--p-color);
+}
+
+/*Account Details*/
+
+.account-details img {
+  border-radius: 50%;
+  width: 150px;
+  border: 1px solid var(--header-footer-color);
+}
+
+.account-details {
+  max-width: 1100px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.account-details div {
+  padding-right: 20px;
+}
+
+.image-details {
+  position: relative;
+}
+
+.image-details p {
+  position: absolute;
+  color: var(--p-color);
+  left: 20px;
+}
+
+.details {
+  background-color: lightgray;
+  padding: 10px 10px 200px 10px;
+  border: 1px solid var(--header-footer-color);
 }

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Gamehub.Inc</title>
@@ -7,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="../css/sell-game.css">
+        <link rel="stylesheet" href="../css/login.css">
         <link rel="stylesheet" href="../css/media.css">
         <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
     </head>
@@ -29,39 +30,34 @@
                 <input type="text" placeholder="Search">
             </div>
             <div>
-                <a href="Checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="../Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
             <div class="login">
                 <i class="fas fa-user-alt"></i>
-                <a href="../Login/login.html" class="log-in">Log in</a>
+                <a href="login.html" class="log-in">Log in</a>
             </div>
         </header>
         <main>
             <section>
                 <div>
-                    <h2>Order complete</h2>
+                    <h2>Log in</h2>
                 </div>
                 <hr>
             </section>
-            <section class="receipt">
-                <div class="receipt-info">
-                    <p class="larger">Gamehub.inc</p>
-                    <p>Will be delivered to:</p>
-                    <p>0060 Oslo, address 47</p>
-                    <div class="receipt-info-extended">
-                        <p class="larger">Receipt</p>
-                    </div>
+            <section class="login-form">
+                <div class="input">
+                    <label for="E-mail"><i class="fas fa-user"></i></label>
+                    <input type="text" name ="E-mail" placeholder="E-mail">
                 </div>
-                <div class="receipt-info-main">
-                    <img src="../images/GameHub_covers.jpg" class="video-game" alt="Ping Pong Championship, a ping pong simulator">
-                    <div>
-                        <p>Ping Pong Championship</p>
-                        <p>Physical edition</p>
-                        <p class="price__receipt">Paid: <span>$ 29.99</span></p>
-                    </div>
+                <div class="input">
+                    <label for="Password"><i class="fas fa-user"></i></label>
+                    <input type="text" name ="Password" placeholder="Password">
                 </div>
-                <div class="print">
-                    <p>Print</p>
+                <div class="login-cta">
+                    <a href="account-details.html" class="add-to-cart">Log in</a>
+                </div>
+                <div class="Create-an-account">
+                    <a href="Create-an-account.html">Create an account</a>
                 </div>
             </section>
         </main>

@@ -30,7 +30,6 @@ h2 {
   width: 700px;
   border: none;
   outline: none;
-  background-color: var(--nav-elements);
   padding-left: 10px;
 }
 
@@ -58,12 +57,11 @@ h2 {
   font-size: 20px;
   position: absolute;
   top: 1250px;
-  border-bottom: 2px solid var(--header-footer-color);
 }
 
 span {
   font-size: 28px;
-  color: #1c8adb;
+  color: var(--p-color);
 }
 
 .add-to-cart,
@@ -140,7 +138,7 @@ div > input {
 
 .print {
   font-size: 1, 5em;
-  color: #1c8adb;
+  color: var(--p-color);
   right: 20px;
   position: absolute;
   bottom: 20px;

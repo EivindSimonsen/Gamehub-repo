@@ -27,5 +27,5 @@ p {
 
 span {
   font-size: 40px;
-  color: #1c8adb;
+  color: var(--p-color);
 }
