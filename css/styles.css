@@ -34,7 +34,7 @@ footer {
 }
 
 body {
-  min-height: 169vh;
+  min-height: 175vh;
   background-color: var(--nav-elements);
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px auto;
