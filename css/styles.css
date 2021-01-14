@@ -72,6 +72,10 @@ header nav {
 }
 
 .fa-bars {
+  padding: 0px 5px;
+}
+
+.fa-bars {
   color: var(--nav-elements);
   font-size: 25px;
   padding-right: 30px;
