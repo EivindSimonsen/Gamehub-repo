@@ -8,6 +8,14 @@
 
 /*Global-styles*/
 
+.logo img {
+  width: 50px;
+}
+
+header {
+  padding: 10px 0px;
+}
+
 .current {
   background-color: var(--nav-elements);
   color: var(--header-footer-color);
@@ -34,7 +42,7 @@ footer {
 }
 
 body {
-  min-height: 175vh;
+  min-height: 100vh;
   background-color: var(--nav-elements);
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px auto;
@@ -57,7 +65,7 @@ footer li {
 header nav {
   display: none;
   position: fixed;
-  top: 95px;
+  top: 60px;
   background: var(--header-footer-color);
   z-index: 1000;
   left: 0px;
@@ -72,13 +80,9 @@ header nav {
 }
 
 .fa-bars {
-  padding: 0px 5px;
-}
-
-.fa-bars {
   color: var(--nav-elements);
   font-size: 25px;
-  padding-right: 30px;
+  padding-right: 10px;
 }
 
 .social {
@@ -111,7 +115,6 @@ input {
 .fa-shopping-cart {
   color: var(--nav-elements);
   font-size: 25px;
-  padding: 0px 15px;
 }
 
 .fa-user-alt {
@@ -129,7 +132,6 @@ input {
 }
 
 .log-in {
-  padding-right: 40px;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
@@ -137,7 +139,7 @@ input {
 
 .search-box {
   position: relative;
-  width: 200px;
+  width: 100px;
   height: 30px;
   background-color: var(--nav-elements);
   border-radius: 30px;

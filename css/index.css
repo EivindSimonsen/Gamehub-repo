@@ -1,6 +1,6 @@
 .welcome {
   background-image: url(../images/Fifa.jpg);
-  min-height: 48vh;
+  min-height: 30vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -13,14 +13,14 @@
   position: absolute;
   text-align: center;
   color: var(--header-footer-color);
-  top: -22px;
-  font-size: 12px;
+  top: -14px;
+  font-size: 8px;
 }
 
 .Popular__h2,
 .Deals__h2 {
   margin: 50px auto;
-  max-width: 500px;
+  max-width: 400px;
   color: var(--header-footer-color);
   position: relative;
 }
@@ -62,8 +62,8 @@
 .Popular,
 .Deals {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 500px;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 325px;
   margin: auto;
   gap: 80px 80px;
   margin: 50px auto 100px auto;
