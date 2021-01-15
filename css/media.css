@@ -89,14 +89,6 @@
     top: 100px;
   }
 
-  .social {
-    display: inline;
-    color: var(--nav-elements);
-    position: absolute;
-    right: 40px;
-    font-size: 25px;
-  }
-
   hr {
     max-width: 800px;
   }

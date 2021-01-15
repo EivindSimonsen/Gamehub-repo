@@ -86,7 +86,8 @@ header nav {
 }
 
 .social {
-  display: none;
+  color: var(--nav-elements);
+  font-size: 25px;
 }
 
 .fa-twitter {
