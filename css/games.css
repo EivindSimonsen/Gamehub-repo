@@ -14,7 +14,7 @@
   margin: 0px auto;
   gap: 20px;
   justify-content: center;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(1, 2fr);
 }
 
 .active {
@@ -30,11 +30,12 @@
 
 .product {
   display: flex;
+  flex-direction: column;
   margin: 0px auto;
   position: relative;
   gap: 5px;
   padding: 20px;
-  min-width: 523.328px;
+  min-width: 335.328px;
   min-height: 207.406px;
 }
 

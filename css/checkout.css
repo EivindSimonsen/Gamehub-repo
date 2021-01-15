@@ -16,8 +16,8 @@ h2 {
 .payment {
   position: relative;
   display: flex;
-  flex-direction: row;
-  max-width: 500px;
+  flex-direction: column;
+  max-width: 300px;
   margin: 40px auto 5px auto;
 }
 
@@ -31,10 +31,7 @@ h2 {
 
 .payment-cta,
 .payment-cta:hover {
-  position: absolute;
-  right: 0px;
-  top: 400px;
-  margin-top: 20px;
+  margin: 20px 0px 100px 0px;
 }
 
 .payment-cta > p {
@@ -54,14 +51,11 @@ span {
 /*Payment page*/
 
 .payment-form {
-  max-width: 500px;
+  max-width: 300px;
   margin: 40px auto;
   position: relative;
 }
 
 .payment-cta-form {
-  max-width: 1100px;
-  position: absolute;
-  left: 400px;
-  bottom: 30px;
+  margin: 10px 0px 100px 10px;
 }

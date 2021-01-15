@@ -64,7 +64,7 @@ footer li {
 
 header nav {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 60px;
   background: var(--header-footer-color);
   z-index: 1000;

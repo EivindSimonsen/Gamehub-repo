@@ -16,7 +16,46 @@
   .welcome {
     min-height: 50vh;
   }
-}
+
+  .categories {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .product {
+    min-width: 523.328px;
+  }
+
+  .search-box-sell {
+    width: 500px;
+  }
+
+  .receipt {
+    max-width: 500px;
+  }
+
+  .receipt-info-main {
+    flex-direction: row;
+  }
+
+  .payment {
+    max-width: 500px;
+  }
+
+  .payment-cta-form {
+    position: absolute;
+    left: 400px;
+    bottom: 30px;
+    margin: 0px;
+  }
+
+  .payment-form {
+    max-width: 500px;
+  }
+
+  .account-details {
+    max-width: 500px;
+    flex-direction: row;
+  }
 
 @media (min-width: 814px) {
   .Popular,
@@ -76,6 +115,7 @@
 
   .payment {
     max-width: 800px;
+    flex-direction: row;
   }
 
   .payment-form {
@@ -83,8 +123,7 @@
   }
 
   .product {
-    flex-direction: row;
-    align-items: unset;
+    align-items: center;
     max-width: 800px;
   }
 
@@ -95,9 +134,21 @@
   .logo img {
     width: 150px;
   }
+
+  .payment-cta,
+  .payment-cta:hover {
+    position: absolute;
+    right: 0px;
+    top: 215px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .product {
+    flex-direction: row;
+    align-items: unset;
+  }
+
   .grid-order {
     grid-template-columns: repeat(2, 13fr);
   }
