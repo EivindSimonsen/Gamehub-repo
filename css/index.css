@@ -93,3 +93,9 @@
   right: 0px;
   left: 0px;
 }
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--nav-elements);
+  padding-right: 10px;
+}
