@@ -16,7 +16,7 @@ textarea {
 }
 
 .form {
-  max-width: 500px;
+  max-width: 300px;
   margin: 50px auto;
 }
 
@@ -34,4 +34,14 @@ textarea {
 .add-to-cart,
 .add-to-cart:hover {
   padding: 10px 50px;
+}
+
+#contact-message {
+  background-color: lightgreen;
+  padding: 20px;
+  width: 250px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 20px auto;
+  display: none;
 }

@@ -154,3 +154,14 @@ hr {
   border: 1px solid;
   max-width: 500px;
 }
+
+.form-error {
+  color: red;
+  padding-bottom: 30px;
+  display: none;
+}
+
+#form-button {
+  width: 200px;
+  margin: auto;
+}

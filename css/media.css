@@ -1,4 +1,19 @@
 @media (min-width: 655px) {
+  .welcome {
+    background-image: url(../images/Fifa.jpg);
+    min-height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .welcome__content {
+    position: absolute;
+  }
+
   .Popular,
   .Deals {
     grid-template-columns: repeat(2, 1fr);
@@ -56,6 +71,7 @@
     max-width: 500px;
     flex-direction: row;
   }
+}
 
 @media (min-width: 814px) {
   .Popular,
@@ -98,10 +114,6 @@
   }
 
   .receipt {
-    max-width: 800px;
-  }
-
-  .form {
     max-width: 800px;
   }
 
@@ -212,7 +224,7 @@
   }
 
   .form {
-    max-width: 1100px;
+    max-width: 600px;
   }
 
   .payment {
@@ -229,5 +241,9 @@
 
   .welcome {
     min-height: 70vh;
+  }
+
+  #contact-message {
+    width: 400px;
   }
 }
