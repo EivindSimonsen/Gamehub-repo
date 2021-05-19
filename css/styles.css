@@ -16,6 +16,19 @@ header {
   padding: 10px 0px;
 }
 
+.fixed {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.bottom-fixed {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  bottom: 0px;
+}
+
 .current {
   background-color: var(--nav-elements);
   color: var(--header-footer-color);
@@ -164,4 +177,8 @@ hr {
 #form-button {
   width: 200px;
   margin: auto;
+}
+
+.top {
+  margin-top: 100px;
 }

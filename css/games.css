@@ -11,7 +11,7 @@
   display: grid;
   flex-direction: column;
   padding: 40px;
-  margin: 0px auto;
+  margin: 60px auto 0px auto;
   gap: 20px;
   justify-content: center;
   grid-template-columns: repeat(1, 2fr);
