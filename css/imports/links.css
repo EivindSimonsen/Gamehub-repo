@@ -18,6 +18,16 @@
   border-width: 1px;
 }
 
+.add-to-cart-grey {
+  background-color: grey;
+  color: var(--nav-elements);
+  border-radius: 30px;
+  padding: 10px 30px;
+  position: relative;
+  top: 20px;
+  width: 150px;
+}
+
 a {
   color: var(--nav-elements);
   text-decoration: none;

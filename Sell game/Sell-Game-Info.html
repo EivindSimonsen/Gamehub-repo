@@ -29,7 +29,7 @@
     </script>
   </head>
   <body>
-    <header>
+    <header class="fixed-mobileNoScroll">
       <div>
         <a href="../index.html" class="logo"><img src="../images/GameHub_Logo.png" alt="Gamehub logo" /></a>
       </div>
@@ -67,18 +67,24 @@
         <div>
           <p class="larger">Ping Pong Championship</p>
           <p>Physical edition</p>
-          <div class="input">
-            <label for="Your-name"><i class="fas fa-user"></i></label>
-            <input type="text" name="Your-name" placeholder="Your name" />
-          </div>
-          <div class="input">
-            <label for="Account number"><i class="fas fa-user"></i></label>
-            <input type="text" name="Account number" placeholder="Account number" />
-          </div>
-          <div class="input">
-            <label for="Address"><i class="fas fa-user"></i></label>
-            <input type="text" name="Address" placeholder="Address" />
-          </div>
+          <form class="sellGameForm">
+            <div class="input">
+              <label for="Your-name"><i class="fas fa-user"></i></label>
+              <input type="text" name="Your-name" id="fullName" placeholder="Your name" />
+              <div class="form-error" id="fullNameError">Please enter your full name</div>
+            </div>
+            <div class="input">
+              <label for="Account number"><i class="fas fa-user"></i></label>
+              <input type="text" name="Account number" id="accountNumber" placeholder="Account number (11 digits)" />
+              <div class="form-error" id="accountNumberError">Please enter a valid account number</div>
+            </div>
+            <div class="input">
+              <label for="Address"><i class="fas fa-user"></i></label>
+              <input type="text" name="Address" id="address" placeholder="Address" />
+              <div class="form-error" id="addressError">Please enter your address</div>
+            </div>
+            <!-- <button disabled>sell</button> -->
+          </form>
           <p class="price">You get: <span>$ 9.99</span></p>
         </div>
         <div id="bottom">
@@ -91,9 +97,10 @@
           <p>-Original cover</p>
           <p>-Correct CD</p>
           <p>-Good functionality</p>
-          <a href="Sell-Game-Receipt.html" class="add-to-cart">Sell</a>
+          <div class="linkDisabled"></div>
         </div>
       </section>
+      <script src="../js/sellGameInfo.js"></script>
     </main>
     <footer>
       <nav>

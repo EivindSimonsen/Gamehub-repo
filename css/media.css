@@ -1,4 +1,21 @@
+@media (max-width: 1199px) {
+  .fixed-mobileNoScroll {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  main {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+}
+
 @media (min-width: 655px) {
+  #categories {
+    margin: 0px auto;
+  }
+
   .welcome {
     background-image: url(../images/Fifa.jpg);
     min-height: 30vh;
@@ -76,9 +93,9 @@
     top: 86px;
   }
 
-  .top {
+  /* .top {
     margin-top: 120px;
-  }
+  } */
 }
 
 @media (min-width: 814px) {
@@ -163,9 +180,9 @@
     margin: 120px auto 0px auto;
   }
 
-  .top {
+  /* .top {
     margin-top: 150px;
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
