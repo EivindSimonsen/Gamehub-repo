@@ -72,36 +72,40 @@
         </div>
       </section>
       <hr />
-      <section class="payment-form">
+      <form class="payment-form">
         <div class="input">
           <label for="Your-name"><i class="fas fa-user"></i></label>
-          <input type="text" name="Your-name" placeholder="Your name" />
+          <input type="text" name="Your-name" id="fullName" placeholder="Your name" />
+          <div class="form-error" id="fullNameError">Please enter your full name</div>
         </div>
         <div class="input">
           <label for="Card"><i class="fas fa-user"></i></label>
-          <input type="text" name="Card" placeholder="Card nr" />
+          <input type="text" name="Card" id="accountNumber" placeholder="Card nr (**** **** **** ****)" />
+          <div class="form-error" id="accountNumberError">Please enter your card number</div>
         </div>
         <div class="input">
           <label for="Date"><i class="fas fa-user"></i></label>
-          <input type="text" name="Date" placeholder="exp date" />
+          <input type="text" name="Date" id="expDate" placeholder="exp date (example 22/22)" />
+          <div class="form-error" id="expDateError">Please enter your card expiration date</div>
         </div>
         <div class="input">
           <label for="CVC"><i class="fas fa-user"></i></label>
-          <input type="text" name="CVC" placeholder="CVC" />
+          <input type="text" name="CVC" id="cvc" placeholder="CVC (Three numbers)" />
+          <div class="form-error" id="cvcError">Please enter your CVC number on the back of your card</div>
         </div>
         <div class="input">
           <label for="Address"><i class="fas fa-user"></i></label>
-          <input type="text" name="Address" placeholder="Address" />
+          <input type="text" name="Address" id="address" placeholder="Address" />
+          <div class="form-error" id="addressError">Please enter your address</div>
         </div>
         <div class="input">
           <label for="City"><i class="fas fa-user"></i></label>
-          <input type="text" name="City" placeholder="City" />
+          <input type="text" name="City" id="city" placeholder="City" />
+          <div class="form-error" id="cityError">Please enter your occupation city</div>
         </div>
-        <div class="payment-cta-form">
-          <p>Total: <span>$29.99</span></p>
-          <a href="Order-complete.html" class="add-to-cart">Pay</a>
-        </div>
-      </section>
+        <div class="payment-cta-form"></div>
+      </form>
+      <script src="../js/shoppingCart.js"></script>
     </main>
     <footer>
       <nav>

@@ -165,13 +165,6 @@
     width: 150px;
   }
 
-  .payment-cta,
-  .payment-cta:hover {
-    position: absolute;
-    right: 0px;
-    top: 215px;
-  }
-
   header nav {
     top: 119px;
   }

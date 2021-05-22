@@ -15,7 +15,7 @@ const linkDisabled = document.querySelector(".linkDisabled");
 const btnDisabled = document.querySelector("#btnDisabled");
 /* const btnDisabled = document.querySelector("button"); */
 
-linkDisabled.innerHTML = `<button class="add-to-cart-grey">Sell</button>`
+linkDisabled.innerHTML = `<button class="add-to-cart-grey">Sell</button>`;
 
 function validateSellGameForm(event) {
     event.preventDefault();

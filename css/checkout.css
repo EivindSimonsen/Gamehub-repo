@@ -26,12 +26,14 @@ h2 {
 }
 
 .payment-image > img {
-  width: 300px;
+  width: 150px;
 }
 
 .payment-cta,
 .payment-cta:hover {
-  margin: 20px 0px 100px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
 }
 
 .payment-cta > p {
@@ -41,11 +43,11 @@ h2 {
 
 span {
   color: var(--p-color);
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .larger {
-  font-size: 30px;
+  margin-top: 0px;
 }
 
 /*Payment page*/
