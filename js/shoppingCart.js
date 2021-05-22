@@ -38,7 +38,7 @@ function validatePaymentForm(event) {
         fullNameError.style.display = "block";
     }
 
-    if (accountNumber.value.trim().length === 11) {
+    if (accountNumber.value.trim().length === 16) {
         accountNumberError.style.display = "none";
     } else {
         accountNumberError.style.display = "block";
@@ -68,7 +68,7 @@ function validatePaymentForm(event) {
         cityError.style.display = "block";
     }
 
-    if (fullName.value.trim().length > 0 && accountNumber.value.trim().length === 11 && expDate.value.trim().length === 4 && cvc.value.trim().length === 3 && address.value.trim().length > 0 && city.value.trim().length > 0) {
+    if (fullName.value.trim().length > 0 && accountNumber.value.trim().length === 16 && expDate.value.trim().length === 4 && cvc.value.trim().length === 3 && address.value.trim().length > 0 && city.value.trim().length > 0) {
         paymentCtaForm.innerHTML = `
                                     <p>Total: <span>$29.99</span></p>
                                     <a href="Order-complete.html" class="add-to-cart">Pay</a>
