@@ -60,22 +60,24 @@
         </div>
         <hr />
       </section>
+      <div id="login-message">Successfull login</div>
       <section class="login-form">
         <div class="input">
           <label for="E-mail"><i class="fas fa-user"></i></label>
-          <input type="text" name="E-mail" placeholder="E-mail" />
+          <input type="text" name="E-mail" id="email" placeholder="E-mail" />
+          <div class="form-error" id="emailError">Please enter a valid E-mail</div>
         </div>
         <div class="input">
           <label for="Password"><i class="fas fa-user"></i></label>
-          <input type="text" name="Password" placeholder="Password" />
+          <input type="text" name="Password" id="password" placeholder="Password" />
+          <div class="form-error" id="passwordError">Password not matching account</div>
         </div>
-        <div class="login-cta">
-          <a href="account-details.html" class="add-to-cart">Log in</a>
-        </div>
+        <div class="createAccountBtn"></div>
         <div class="Create-an-account">
           <a href="Create-an-account.html">Create an account</a>
         </div>
       </section>
+      <script src="../js/login.js"></script>
     </main>
     <footer>
       <nav>

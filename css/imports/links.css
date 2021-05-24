@@ -28,6 +28,20 @@
   text-align: center;
 }
 
+.loginBtnDisabled {
+  background-color: grey;
+  color: var(--nav-elements);
+  border-radius: 30px;
+  padding: 10px 60px;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 110px;
+  margin: 0px auto;
+}
+
 a {
   color: var(--nav-elements);
   text-decoration: none;

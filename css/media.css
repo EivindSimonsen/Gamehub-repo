@@ -194,6 +194,11 @@
   .price {
     top: 412px;
   }
+
+  .saveDetails,
+  .saveDetailsContainer {
+    display: flex;
+  }
 }
 
 @media (min-width: 1470px) {

@@ -26,7 +26,7 @@ function validateSellGameForm(event) {
         fullNameError.style.display = "block";
     }
 
-    if (accountNumber.value.trim().length === 11) {
+    if (validateAccountNumber(accountNumber.value.trim().replace(/\s/g, "")) === true) {
         accountNumberError.style.display = "none";
     } else {
         accountNumberError.style.display = "block";
@@ -38,7 +38,7 @@ function validateSellGameForm(event) {
         addressError.style.display = "block";
     }
 
-    if (fullName.value.trim().length > 0 && accountNumber.value.trim().length === 11 && address.value.trim().length > 0) {
+    if (fullName.value.trim().length > 0 && validateAccountNumber(accountNumber.value.replace(/\s/g, "")) === true && address.value.trim().length > 0) {
         linkDisabled.innerHTML = `<a href="Sell-Game-Receipt.html" class="add-to-cart" id="btnDisabled">Sell</a>`;
         form.reset();
     } 
@@ -47,3 +47,14 @@ function validateSellGameForm(event) {
 console.log("hello");
 
 sellGameForm.addEventListener("change", validateSellGameForm)
+
+function validateAccountNumber(accountNumber) {
+    /* const whitespaceFix = /\s/g, "" */
+    const visaRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+    const mastercardRegEx = /^(?:5[1-5][0-9]{14})$/;
+    const amexpRegEx = /^(?:3[47][0-9]{13})$/;
+    const discovRegEx = /^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;
+
+    const patternMatches = visaRegEx.test(accountNumber) || mastercardRegEx.test(accountNumber) || amexpRegEx.test(accountNumber) || discovRegEx.test(accountNumber);
+    return patternMatches;
+}

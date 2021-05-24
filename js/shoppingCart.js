@@ -38,19 +38,19 @@ function validatePaymentForm(event) {
         fullNameError.style.display = "block";
     }
 
-    if (accountNumber.value.trim().length === 16) {
+    if (validateAccountNumber(accountNumber.value.trim().replace(/\s/g, "")) === true) {
         accountNumberError.style.display = "none";
     } else {
         accountNumberError.style.display = "block";
     }
 
-    if (expDate.value.trim().length === 4) {
+    if (validateExpDate(expDate.value.trim()) === true) {
         expDateError.style.display = "none";
     } else {
         expDateError.style.display = "block";
     }
 
-    if (cvc.value.trim().length === 3) {
+    if (validateCvc(cvc.value.trim()) === true) {
         cvcError.style.display = "none";
     } else {
         cvcError.style.display = "block";
@@ -68,7 +68,7 @@ function validatePaymentForm(event) {
         cityError.style.display = "block";
     }
 
-    if (fullName.value.trim().length > 0 && accountNumber.value.trim().length === 16 && expDate.value.trim().length === 4 && cvc.value.trim().length === 3 && address.value.trim().length > 0 && city.value.trim().length > 0) {
+    if (fullName.value.trim().length > 0 && validateAccountNumber(accountNumber.value.trim().replace(/\s/g, "")) === true && validateExpDate(expDate.value.trim()) === true && validateCvc(cvc.value.trim()) === true && address.value.trim().length > 0 && city.value.trim().length > 0) {
         paymentCtaForm.innerHTML = `
                                     <p>Total: <span>$29.99</span></p>
                                     <a href="Order-complete.html" class="add-to-cart">Pay</a>
@@ -82,3 +82,28 @@ function validatePaymentForm(event) {
 }
 
 paymentForm.addEventListener("change", validatePaymentForm);
+
+function validateAccountNumber(accountNumber) {
+    /* const whitespaceFix = /\s/g, "" */
+    const visaRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+    const mastercardRegEx = /^(?:5[1-5][0-9]{14})$/;
+    const amexpRegEx = /^(?:3[47][0-9]{13})$/;
+    const discovRegEx = /^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;
+
+    const patternMatches = visaRegEx.test(accountNumber) || mastercardRegEx.test(accountNumber) || amexpRegEx.test(accountNumber) || discovRegEx.test(accountNumber);
+    return patternMatches;
+}
+
+function validateExpDate(expDate) {
+    const expRegex = /^(0[1-9]|1[0-2])\/?(([0-9]{4}|[0-9]{2})$)/;
+
+    const patternMatches = expRegex.test(expDate);
+    return patternMatches;
+}
+
+function validateCvc(cvc) {
+    const cvcRegEx = /^[0-9]{3,4}$/;
+
+    const patternMatches = cvcRegEx.test(cvc);
+    return patternMatches;
+}

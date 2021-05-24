@@ -19,6 +19,7 @@ h2 {
 
 .Create-an-account {
   padding: 20px;
+  margin-top: 30px;
 }
 
 .Create-an-account > a {
@@ -65,4 +66,14 @@ h2 {
 
 span {
   font-size: 20px;
+}
+
+#login-message {
+  background-color: lightgreen;
+  padding: 20px;
+  width: 250px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 20px auto;
+  display: none;
 }

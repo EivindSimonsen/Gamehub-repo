@@ -179,3 +179,22 @@ hr {
 button {
   border: 0px;
 }
+
+.saveDetails,
+.saveDetailsContainer {
+  display: none;
+}
+
+.saveDetailsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.saveDetails {
+  color: var(--nav-elements);
+  font-size: 1, 5rem;
+  background-color: var(--header-footer-color);
+  padding: 20px 30px;
+  border-radius: 25px;
+  text-align: center;
+}
