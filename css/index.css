@@ -83,8 +83,24 @@
   left: 0px;
 }
 
-.old-price {
-  text-decoration: line-through;
+#countdown {
   color: var(--nav-elements);
-  padding-right: 10px;
+  background-color: var(--header-footer-color);
+  padding: 10px;
+  display: flex;
 }
+
+#countdown span {
+  color: var(--important);
+}
+
+.timer {
+  margin: 0px 5px;
+}
+
+/* #day,
+#hour,
+#minute,
+#second {
+  color: var(--important);
+} */

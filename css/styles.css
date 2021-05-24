@@ -162,7 +162,7 @@ hr {
 }
 
 .form-error {
-  color: red;
+  color: var(--important);
   padding-bottom: 30px;
   display: none;
 }
@@ -197,4 +197,10 @@ button {
   padding: 20px 30px;
   border-radius: 25px;
   text-align: center;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--important);
+  padding-right: 10px;
 }
