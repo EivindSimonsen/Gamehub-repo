@@ -17,8 +17,8 @@
   }
 
   .welcome {
-    background-image: url(../images/Fifa.jpg);
-    min-height: 30vh;
+    /* background-image: url(../images/Fifa.jpg); */
+    min-height: 25vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -43,10 +43,6 @@
 
   .welcome__content {
     font-size: 12px;
-  }
-
-  .welcome {
-    min-height: 50vh;
   }
 
   .categories {
@@ -126,8 +122,9 @@
   .search-box {
     width: 350px;
   }
+
   .welcome__content {
-    top: 100px;
+    top: 30px;
   }
 
   hr {
@@ -174,6 +171,13 @@
   }
 }
 
+@media (min-width: 883px) {
+  .welcome {
+    background-image: url(../images/Fifa.jpg);
+    min-height: 50vh;
+  }
+}
+
 @media (min-width: 1200px) {
   .product {
     align-items: unset;
@@ -195,6 +199,10 @@
   .saveDetailsContainer {
     display: flex;
     margin-bottom: 40px;
+  }
+
+  .welcome__content {
+    top: 70px;
   }
 }
 
