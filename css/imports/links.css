@@ -2,18 +2,20 @@
   background-color: var(--header-footer-color);
   color: var(--nav-elements);
   border-radius: 30px;
-  padding: 10px 30px;
+  padding: 15px 30px;
   position: relative;
-  top: 20px;
+  top: 40px;
+  border: solid var(--header-footer-color);
+  border-width: 1px;
 }
 
 .add-to-cart:hover {
   background-color: var(--nav-elements);
   color: var(--header-footer-color);
   border-radius: 30px;
-  padding: 10px 30px;
+  padding: 15px 30px;
   position: relative;
-  top: 20px;
+  top: 40px;
   border: solid var(--header-footer-color);
   border-width: 1px;
 }

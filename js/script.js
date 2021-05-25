@@ -13,13 +13,12 @@ if (gamesArray[i].popular === false) {
     `<div class="Popular__Products">
         <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
         <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
-        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}">
+        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}" onclick="location.href='Checkout/Checkout.html';" style="cursor: pointer">
         <p>${gamesArray[i].price}</p>
-        <a href="Checkout/Checkout.html" class="add-to-cart">Add to cart</a>
+        <button class="add-to-cart">Add to cart</button>
     </div>
     `
 }
-
 
 for (let i = 0; i < gamesArray.length; i++) {
 
@@ -31,11 +30,19 @@ for (let i = 0; i < gamesArray.length; i++) {
     `<div class="Deals__Products">
         <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
         <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
-        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}">
+        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}" onclick="location.href='Checkout/Checkout.html';" style="cursor: pointer">
         <p><span class="old-price">${gamesArray[i].oldPrice}</span> ${gamesArray[i].price}</p>
-        <a href="Checkout/Checkout.html" class="add-to-cart">Add to cart</a>
+        <button class="add-to-cart">Add to cart</button>
     </div>
     `
 }
+
+/* const detailsLink = document.querySelector(".Popular__Products");
+
+detailsLink.addEventListener("onclick" )
+
+function details() {
+    detailsLink.innerHTML += `<a href`
+} */
 
 console.log(gamesArray);
