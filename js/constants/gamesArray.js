@@ -9,6 +9,7 @@ export const gamesArray = [
         popular: true,
         preOrder: false,
         used: true,
+        discount: "",
     },
     {
         name: "Super Duper",
@@ -20,6 +21,7 @@ export const gamesArray = [
         popular: false,
         preOrder: false,
         used: false,
+        discount: "40%",
     },
     {
         name: "Black",
@@ -31,6 +33,7 @@ export const gamesArray = [
         popular: true,
         preOrder: false,
         used: true,
+        discount: "",
     },
     {
         name: "Furious",
@@ -42,6 +45,7 @@ export const gamesArray = [
         popular: false,
         preOrder: false,
         used: false,
+        discount: "50%",
     },
     {
         name: "Assassin",
@@ -53,6 +57,7 @@ export const gamesArray = [
         popular: false,
         preOrder: false,
         used: false,
+        discount: "30%",
     },
     {
         name: "Space War",
@@ -64,6 +69,7 @@ export const gamesArray = [
         popular: false,
         preOrder: false,
         used: true,
+        discount: "",
     },
     {
         name: "Racing",
@@ -75,6 +81,7 @@ export const gamesArray = [
         popular: false,
         preOrder: false,
         used: false,
+        discount: "70%",
     },
     {
         name: "Boxer",
@@ -86,6 +93,7 @@ export const gamesArray = [
         popular: true,
         preOrder: true,
         used: true,
+        discount: "",
     },
     {
         name: "Cyberpunk",
@@ -97,6 +105,7 @@ export const gamesArray = [
         popular: true,
         preOrder: true,
         used: false,
+        discount: "",
     },
     {
         name: "Forge Legend",
@@ -108,6 +117,7 @@ export const gamesArray = [
         popular: false,
         preOrder: true,
         used: false,
+        discount: "",
     },
     
 ]

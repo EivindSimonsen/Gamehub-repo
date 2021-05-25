@@ -37,12 +37,4 @@ for (let i = 0; i < gamesArray.length; i++) {
     `
 }
 
-/* const detailsLink = document.querySelector(".Popular__Products");
-
-detailsLink.addEventListener("onclick" )
-
-function details() {
-    detailsLink.innerHTML += `<a href`
-} */
-
 console.log(gamesArray);

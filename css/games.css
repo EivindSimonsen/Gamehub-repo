@@ -108,3 +108,22 @@ p {
 #countdown p {
   font-size: 20px;
 }
+
+.add-to-cart {
+  position: static;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.add-to-cart:hover {
+  position: static;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+#gamesSpecificCta {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  top: 140px;
+}
