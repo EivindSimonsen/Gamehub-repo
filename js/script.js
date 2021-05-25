@@ -1,15 +1,41 @@
-const countdownDate = new Date("June 30, 2021 23:59:59").getTime();
-const timer = setInterval(function(){
-    const now = new Date().getTime();
-    const distance = countdownDate - now;
+import { gamesArray } from "../js/constants/gamesArray.js";
 
-    const day = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const second = Math.floor((distance % (1000 * 60)) / (1000));
+const popularContainer = document.querySelector(".Popular");
+const dealsContainer = document.querySelector(".Deals");
 
-    document.getElementById("day").innerHTML = `<span>${day}</span> days`;
-    document.getElementById("hour").innerHTML = `<span>${hour}</span> hours`;
-    document.getElementById("minute").innerHTML = `<span>${minute}</span> minutes <span>remaining</span>`;
-    /* document.getElementById("second").innerHTML = `<span>0${second}</span> days`; */
-});
+for (let i = 0; i < gamesArray.length; i++) {
+
+if (gamesArray[i].popular === false) {
+    continue;
+}
+
+    popularContainer.innerHTML += 
+    `<div class="Popular__Products">
+        <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
+        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
+        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}">
+        <p>${gamesArray[i].price}</p>
+        <a href="Checkout/Checkout.html" class="add-to-cart">Add to cart</a>
+    </div>
+    `
+}
+
+
+for (let i = 0; i < gamesArray.length; i++) {
+
+    if (gamesArray[i].oldPrice === "") {
+        continue;
+    }
+
+    dealsContainer.innerHTML +=
+    `<div class="Deals__Products">
+        <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
+        <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
+        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}">
+        <p><span class="old-price">${gamesArray[i].oldPrice}</span> ${gamesArray[i].price}</p>
+        <a href="Checkout/Checkout.html" class="add-to-cart">Add to cart</a>
+    </div>
+    `
+}
+
+console.log(gamesArray);
