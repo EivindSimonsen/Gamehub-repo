@@ -13,9 +13,9 @@ if (gamesArray[i].popular === false) {
     `<div class="Popular__Products">
         <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
         <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
-        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}" onclick="location.href='#';" style="cursor: pointer">
+        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}" onclick="location.href='details.html';" style="cursor: pointer">
         <p>$ ${gamesArray[i].price}</p>
-        <button class="add-to-cart increment" data-product="${gamesArray[i].id}">Add to cart</button>
+        <button class="add-to-cart" data-product="${gamesArray[i].id}">Add to cart</button>
     </div>
     `
 }
@@ -30,22 +30,15 @@ for (let i = 0; i < gamesArray.length; i++) {
     `<div class="Deals__Products">
         <label for="console"><i class="fas fa-gamepad console-icon"></i></label>
         <label for="pc"><i class="fas fa-desktop pc-icon"></i></label>
-        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}" onclick="location.href='#';" style="cursor: pointer">
+        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}" onclick="location.href='details.html';" style="cursor: pointer">
         <p><span class="old-price">${gamesArray[i].oldPrice}</span> $${gamesArray[i].price}</p>
-        <button class="add-to-cart increment" data-product="${gamesArray[i].id}">Add to cart</button>
+        <button class="add-to-cart" data-product="${gamesArray[i].id}">Add to cart</button>
     </div>
     `
 }
 
-/* let count = 0;
-const countButton = document.querySelector(".increment");
+let count = 0;
 const value = document.querySelector(".counter");
-
-countButton.onclick = function(){
-    count++;
-    value.innerHTML = `<a href="Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i>${count}</a>`;
-}; */ // this was a counter which would update the shopping cart icon in the top right, however, it only updates when ping pong is pressed, and not the others.
-
 const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total");
@@ -57,7 +50,6 @@ buttons.forEach(function(button){
     button.onclick = function(event) {
         const itemToAdd = gamesArray.find(item => item.id === event.target.dataset.product);
         cartArray.push(itemToAdd);
-        /* console.log(cartArray); */
         showCart(cartArray);
         localStorage.setItem("cartList", JSON.stringify(cartArray));
     }
@@ -67,9 +59,11 @@ function showCart(cartItems) {
     cart.style.display = "flex"
     cartList.innerHTML = "";
     let total = 0;
+    count++;
     cartItems.forEach(function(cartElement){
         total += cartElement.price;
         total = Math.round(total * 100) / 100;
+        value.innerHTML = `<a href="Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i>${count}</a>`;
         cartList.innerHTML += 
         `<div class="cart-item">
             <h4>${cartElement.name}</h4>

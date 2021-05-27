@@ -11,7 +11,7 @@ for (let i = 0; i < gamesArray.length; i++) {
     preOrder.innerHTML += 
     `<div class="product">
         <div class="product-image">
-        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}" onclick="location.href='../../Checkout/Checkout.html';" style="cursor: pointer">
+        <img src="${gamesArray[i].image}" alt="${gamesArray[i].description}" onclick="location.href='../../details.html';" style="cursor: pointer">
         </div>
         <div class="product-info">
             <p>${gamesArray[i].name}

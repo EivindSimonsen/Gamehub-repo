@@ -3,8 +3,10 @@
 const cartItems = JSON.parse(localStorage.getItem("cartList"));
 const cartContainer = document.querySelector(".payment");
 const totalContainer = document.querySelector(".payment-cta");
+const value = document.querySelector(".counter");
 
 let total = 0;
+
 cartItems.forEach(function(cartElement){
     total += cartElement.price
     total = Math.round(total * 100) / 100;
@@ -28,3 +30,4 @@ totalContainer.innerHTML = `<div>
                             </div>
 
 `;
+

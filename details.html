@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gamehub.Inc | Checkout</title>
-    <meta name="Search for many different games!" content="Find the game you want!" />
+    <title>Gamehub.Inc | Home</title>
+    <meta name="Best online gaming store in EU" content="Great games at competetive prices" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/checkout.css" />
-    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/search.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="fixed-mobileNoScroll">
-      <div>
-        <a href="../index.html" class="logo"><img src="../images/GameHub_Logo.png" alt="Gamehub logo" /></a>
+    <header>
+      <!-- class="fixed" -->
+      <div class="logo">
+        <a href="index.html"><img src="images/GameHub_Logo.png" alt="Gamehub logo" /></a>
       </div>
       <label for="Hamburger"><i class="fas fa-bars"></i></label>
       <input type="checkbox" id="Hamburger" />
       <nav>
         <ul>
-          <li><a href="../games/Games.html">Games</a></li>
-          <li><a href="../Sell game/Sell-Game.html">Sell game</a></li>
+          <li>
+            <a href="games/Games.html">Games</a>
+          </li>
+          <li>
+            <a href="Sell game/Sell-Game.html">Sell game</a>
+          </li>
         </ul>
       </nav>
       <div class="search-box">
-        <a href="../Search-results/Search.html"><i class="fas fa-search"></i></a>
+        <a href="Search-results/Search.html"><i class="fas fa-search"></i></a>
         <input type="text" placeholder="Search" />
       </div>
       <div class="counter">
-        <a href="../Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i></a>
+        <a href="Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i></a>
       </div>
       <div class="login">
         <i class="fas fa-user-alt"></i>
-        <a href="../Login/login.html" class="log-in">Log in</a>
+        <a href="Login/login.html" class="log-in">Log in</a>
       </div>
     </header>
     <main>
       <section>
         <div>
-          <h2>Shopping-cart</h2>
+          <h2>Details</h2>
         </div>
         <hr />
       </section>
-      <section class="payment"></section>
+      <section class="product-size"></section>
       <hr />
-      <section class="payment-cta"></section>
-      <script src="../js/checkout/cart.js" type="module"></script>
+      <script src="js/details.js" type="module"></script>
     </main>
     <footer>
       <nav>
         <ul>
-          <li><a href="../Contact/Contact.html" class="footer">Contact</a></li>
+          <li>
+            <a href="Contact/Contact.html" class="footer">Contact</a>
+          </li>
         </ul>
       </nav>
       <section class="social">

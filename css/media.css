@@ -158,6 +158,10 @@
   .receipt-info-main {
     flex-direction: row;
   }
+
+  .text-left > p {
+    margin: 20px 100px;
+  }
 }
 
 @media (min-width: 883px) {
