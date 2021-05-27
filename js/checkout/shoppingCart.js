@@ -1,4 +1,4 @@
-console.log("hello")
+// Form script
 
 const paymentForm = document.querySelector(".payment-form");
 const paymentCtaForm = document.querySelector(".payment-cta-form");
@@ -21,10 +21,7 @@ const addressError = document.querySelector("#addressError");
 const city = document.querySelector("#city");
 const cityError = document.querySelector("#cityError");
 
-const paymentDisabled = document.querySelector(".paymentDisabled");
-const btnDisabled = document.querySelector("#btnDisabled");
-
-paymentCtaForm.innerHTML = `<p>Total: <span>$29.99</span></p>
+paymentCtaForm.innerHTML = `
                             <div class="add-to-cart-grey">Pay</div>
                             `
 
@@ -70,12 +67,11 @@ function validatePaymentForm(event) {
 
     if (fullName.value.trim().length > 0 && validateAccountNumber(accountNumber.value.trim().replace(/\s/g, "")) === true && validateExpDate(expDate.value.trim()) === true && validateCvc(cvc.value.trim()) === true && address.value.trim().length > 0 && city.value.trim().length > 0) {
         paymentCtaForm.innerHTML = `
-                                    <p>Total: <span>$29.99</span></p>
                                     <a href="Order-complete.html" class="add-to-cart">Pay</a>
                                     `
       form.reset();
     } else {
-        paymentCtaForm.innerHTML = `<p>Total: <span>$29.99</span></p>
+        paymentCtaForm.innerHTML = `
                             <div class="add-to-cart-grey">Pay</div>
                             `
     }   
@@ -84,7 +80,6 @@ function validatePaymentForm(event) {
 paymentForm.addEventListener("change", validatePaymentForm);
 
 function validateAccountNumber(accountNumber) {
-    /* const whitespaceFix = /\s/g, "" */
     const visaRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
     const mastercardRegEx = /^(?:5[1-5][0-9]{14})$/;
     const amexpRegEx = /^(?:3[47][0-9]{13})$/;
@@ -107,3 +102,34 @@ function validateCvc(cvc) {
     const patternMatches = cvcRegEx.test(cvc);
     return patternMatches;
 }
+
+// Cart script
+
+const cartItems = JSON.parse(localStorage.getItem("cartList"));
+const cartContainer = document.querySelector(".payment");
+const totalContainer = document.querySelector(".payment-cta");
+
+let total = 0;
+cartItems.forEach(function(cartElement){
+    total += cartElement.price
+    total = Math.round(total * 100) / 100;
+    cartContainer.innerHTML += 
+    `<section>
+    <div class="payment-image">
+        <img src="${cartElement.image}" class="cart-image">
+    </div>
+    <div class="payment-info">
+        <p class="larger">${cartElement.name}</p>
+        <p class="larger">Physical edition</p>
+        <p>${cartElement.description}</p>
+        <p class="larger"><span>${cartElement.price}</span></p>
+    </div>
+    </section>
+    `
+})
+totalContainer.innerHTML = `<div>
+                                <p>Total: <span>$${total}</span></p>
+                            </div>
+
+`;
+

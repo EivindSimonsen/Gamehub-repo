@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../css/games.css" />
     <link rel="stylesheet" href="../css/media.css" />
     <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
-    <script src="../js/hotjar/hotjar.js"></script>
   </head>
   <body>
     <header class="fixed-mobileNoScroll">
@@ -30,8 +29,8 @@
         <a href="../Search-results/Search.html"><i class="fas fa-search"></i></a>
         <input type="text" placeholder="Search" />
       </div>
-      <div>
-        <a href="../Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i></a>
+      <div class="counter">
+        <a href="Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i></a>
       </div>
       <div class="login">
         <i class="fas fa-user-alt"></i>
@@ -58,82 +57,10 @@
         </div>
       </section>
       <hr />
-      <section class="grid-order">
-        <div class="product">
-          <div class="product-image">
-            <img src="../images/GameHub_covers2.jpg" alt="Super Duper, a dancing simulator" />
-          </div>
-          <div class="product-info">
-            <p>Super Duper</p>
-            <label for="console"><i class="fas fa-gamepad"></i></label>
-            <label for="pc"><i class="fas fa-desktop"></i></label>
-            <div class="product-info--sale">
-              <p class="old-price">$ 59.99</p>
-              <p>$ 35.99</p>
-            </div>
-            <div>
-              <span class="discount">40%</span>
-            </div>
-            <a href="../Checkout/Checkout.html" class="add-to-cart">Add to cart</a>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-image">
-            <img src="../images/GameHub_covers4.jpg" alt="Furious, a PvP fighting game" />
-          </div>
-          <div class="product-info">
-            <p>Furious</p>
-            <label for="console"><i class="fas fa-gamepad"></i></label>
-            <label for="pc"><i class="fas fa-desktop"></i></label>
-            <div class="product-info--sale">
-              <p class="old-price">$ 39.99</p>
-              <p>$ 20.00</p>
-            </div>
-            <div>
-              <span class="discount">50%</span>
-            </div>
-            <a href="../Checkout/Checkout.html" class="add-to-cart">Add to cart</a>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-image">
-            <img src="../images/GameHub_covers5.jpg" alt="Assassin, a stealth base game" />
-          </div>
-          <div class="product-info">
-            <p>Assassin</p>
-            <label for="console"><i class="fas fa-gamepad"></i></label>
-            <label for="pc"><i class="fas fa-desktop"></i></label>
-            <div class="product-info--sale">
-              <p class="old-price">$ 59.99</p>
-              <p>$ 41.99</p>
-            </div>
-            <div>
-              <span class="discount">30%</span>
-            </div>
-            <a href="../Checkout/Checkout.html" class="add-to-cart">Add to cart</a>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-image">
-            <img src="../images/GameHub_covers7.jpg" alt="Racing, a formel 1 racing game" />
-          </div>
-          <div class="product-info">
-            <p>Racing</p>
-            <label for="console"><i class="fas fa-gamepad"></i></label>
-            <label for="pc"><i class="fas fa-desktop"></i></label>
-            <div class="product-info--sale">
-              <p class="old-price">$ 29.99</p>
-              <p>$ 9.00</p>
-            </div>
-            <div>
-              <span class="discount">70%</span>
-            </div>
-            <a href="../Checkout/Checkout.html" class="add-to-cart">Add to cart</a>
-          </div>
-        </div>
-      </section>
+      <section class="grid-order"></section>
       <script src="../js/script.js"></script>
       <script src="../js/constants/countdown.js"></script>
+      <script src="../js/games/sales.js" type="module"></script>
     </main>
     <footer>
       <nav>

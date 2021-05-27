@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../css/checkout.css" />
     <link rel="stylesheet" href="../css/media.css" />
     <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
-    <script src="../js/hotjar/hotjar.js"></script>
   </head>
   <body>
     <header class="fixed-mobileNoScroll">
@@ -46,7 +45,7 @@
         <hr />
       </section>
       <section class="payment">
-        <div class="payment-image">
+        <!-- <div class="payment-image">
           <img src="../images/GameHub_covers.jpg" alt="Ping Pong Championship, a ping pong simulator." />
         </div>
         <div class="payment-info">
@@ -54,7 +53,7 @@
           <p class="larger">Physical edition</p>
           <p>The fan favourite Ping Pong series is back with new challenges and bigger tournaments!</p>
           <p class="larger"><span>$ 29.99</span></p>
-        </div>
+        </div> -->
       </section>
       <hr />
       <form class="payment-form">
@@ -88,9 +87,10 @@
           <input type="text" name="City" id="city" placeholder="City" />
           <div class="form-error" id="cityError">Please enter your occupation city</div>
         </div>
+        <div class="payment-cta"></div>
         <div class="payment-cta-form"></div>
       </form>
-      <script src="../js/shoppingCart.js"></script>
+      <script src="../js/checkout/shoppingCart.js" type="module"></script>
     </main>
     <footer>
       <nav>

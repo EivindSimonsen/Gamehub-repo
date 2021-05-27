@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/media.css" />
     <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
-    <script src="../js/hotjar/hotjar.js"></script>
   </head>
   <body>
     <header class="fixed">
@@ -34,7 +33,7 @@
         <a href="Search-results/Search.html"><i class="fas fa-search"></i></a>
         <input type="text" placeholder="Search" />
       </div>
-      <div>
+      <div class="counter">
         <a href="Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i></a>
       </div>
       <div class="login">
@@ -78,6 +77,12 @@
         </section>
       </section>
       <section class="Deals"></section>
+      <div class="cart">
+        <h2>Your items</h2>
+        <div class="cart-list"></div>
+        <div class="total">Total:</div>
+        <a href="Checkout/Checkout.html" id="cartCheckout" class="add-to-cart">Checkout</a>
+      </div>
       <script src="js/script.js" type="module"></script>
       <script src="../js/constants/countdown.js"></script>
     </main>

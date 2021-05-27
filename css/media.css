@@ -69,12 +69,12 @@
     max-width: 500px;
   }
 
-  .payment-cta-form {
+  /* .payment-cta-form {
     position: absolute;
-    left: 400px;
-    bottom: 30px;
+    left: 202px;
+    bottom: 50px;
     margin: 0px;
-  }
+  } */
 
   .payment-form {
     max-width: 500px;
@@ -203,6 +203,9 @@
 
   .welcome__content {
     top: 70px;
+  }
+  #gamesSpecificCta {
+    position: absolute;
   }
 }
 

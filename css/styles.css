@@ -204,3 +204,42 @@ button {
   color: var(--important);
   padding-right: 10px;
 }
+
+.cart {
+  border: 1px solid var(--header-footer-color);
+  max-width: 1100px;
+  min-width: 200px;
+  padding: 20px;
+  margin: 40px auto;
+  display: none;
+  background: var(--nav-elements);
+  flex-direction: column;
+  color: var(--header-footer-color);
+}
+
+.cart > * {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+  margin: 40px auto 5px auto;
+  justify-content: left;
+  overflow: auto;
+  gap: 50px;
+}
+
+.total {
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.cart > a,
+.cart:hover > a {
+  position: static;
+  text-align: center;
+}
+
+.cart-image {
+  width: 175px;
+  background-size: cover;
+}
