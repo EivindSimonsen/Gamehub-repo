@@ -97,3 +97,37 @@
 .timer {
   margin: 0px 5px;
 }
+
+.reviews {
+  text-align: left;
+  padding: 20px;
+}
+
+.reviews__content {
+  max-width: 800px;
+  margin: 0px auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.text-left > p {
+  text-align: left;
+  margin: 20px 100px;
+}
+
+.reviews__content > * {
+  margin: 30px;
+  background-color: var(--lightblue);
+  padding: 20px;
+}
+
+.Profile-pic {
+  border-radius: 25%;
+  width: 200px;
+}
+
+.star-rating {
+  text-align: center;
+  font-size: 25px;
+}

@@ -238,6 +238,7 @@ button {
 .cart:hover > a {
   position: static;
   text-align: center;
+  display: block;
 }
 
 .cart-image {
