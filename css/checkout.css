@@ -8,7 +8,7 @@ h2 {
 
 .add-to-cart,
 .add-to-cart:hover {
-  padding: 10px 140px;
+  padding: 10px 100px;
 }
 
 /*Checkout page*/
@@ -37,7 +37,7 @@ h2 {
 .payment-cta:hover {
   display: flex;
   justify-content: space-evenly;
-  /* margin-bottom: 80px; */
+  margin-bottom: 80px;
 }
 
 .payment-cta > p {

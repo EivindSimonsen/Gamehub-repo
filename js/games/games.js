@@ -18,19 +18,23 @@ for (let i = 0; i < gamesArray.length; i++) {
             <div class="removeDiv">
                 <span class="discount">${gamesArray[i].discount}</span>
               </div>
-            <button id="gamesSpecificCta" class="add-to-cart increment">Add to cart</button>
+            <button id="gamesSpecificCta" class="add-to-cart increment" data-product="${gamesArray[i].id}">Add to cart</button>
         </div>
     </div>
     `
 }
 
-let count = 0;
-const countButton = document.querySelector(".increment");
-const value = document.querySelector(".counter");
+let cartArray = [];
 
-countButton.onclick = function(){
-    count++;
-    value.innerHTML = `<a href="Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i>${count}</a>`;
-}
+const buttons = document.querySelectorAll("button");
+buttons.forEach(function(button){
+    button.onclick = function(event) {
+        const itemToAdd = gamesArray.find(item => item.id === event.target.dataset.product);
+        cartArray.push(itemToAdd);
+        console.log(cartArray);
+        localStorage.setItem("cartList", JSON.stringify(cartArray));
+    }
+});
 
 console.log(gamesArray);
+

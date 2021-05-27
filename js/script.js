@@ -44,7 +44,7 @@ const value = document.querySelector(".counter");
 countButton.onclick = function(){
     count++;
     value.innerHTML = `<a href="Checkout/Checkout.html"><i class="fas fa-shopping-cart"></i>${count}</a>`;
-}; */
+}; */ // this was a counter which would update the shopping cart icon in the top right, however, it only updates when ping pong is pressed, and not the others.
 
 const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");

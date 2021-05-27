@@ -207,7 +207,7 @@ button {
 
 .cart {
   border: 1px solid var(--header-footer-color);
-  max-width: 1100px;
+  max-width: 800px;
   min-width: 200px;
   padding: 20px;
   margin: 40px auto;
@@ -217,16 +217,17 @@ button {
   color: var(--header-footer-color);
 }
 
-.cart > * {
+/* .cart > * {
   position: relative;
   display: flex;
   flex-direction: row;
   max-width: 1100px;
+  min-width: 200px;
   margin: 40px auto 5px auto;
   justify-content: left;
   overflow: auto;
   gap: 50px;
-}
+} */
 
 .total {
   padding: 20px;
